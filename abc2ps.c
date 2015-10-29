@@ -568,7 +568,7 @@ int createAbc(int argc, char **argv)
 		(void (*)(int level)) lvlarena, /* new level */
 		sizeof(struct SYMBOL) - sizeof(struct abcsym),
         0);				/* don't keep comments */
-//	memset(&info, 0, sizeof info);
+    memset(&info, 0, sizeof info);
 	info['T' - 'A'] = &notitle;
 	notitle.as.text = "T:";
 	set_format();
