@@ -690,9 +690,12 @@ void write_eps(void)
 			outfnam[sizeof outfnam - 5] = '\0';
 			epsf_fn_adj(&outfnam[i]);
 		} else {
-			if (i >= sizeof outfnam - 4 - 3)
-				i = sizeof outfnam - 4 - 3;
-			sprintf(&outfnam[i + 1], "%03d", ++nepsf);
+            // This is the file 'autonumbering' code.
+            // It would be smarter to add an argument for
+            // this. TODO
+//			if (i >= sizeof outfnam - 4 - 3)
+//				i = sizeof outfnam - 4 - 3;
+//			sprintf(&outfnam[i + 1], "%03d", ++nepsf);
 		}
 		strcat(outfnam, epsf == 1 ? ".eps" : ".svg");
 		if ((fout = fopen(outfnam, "w")) == NULL) {
