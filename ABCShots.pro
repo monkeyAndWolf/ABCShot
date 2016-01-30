@@ -34,7 +34,7 @@ HEADERS += abcshots.h \
     front.h \
     slre.h
 unix {
-    target.path = /usr/lib
+    target.path = ../ShotGlass
     INSTALLS += target
 }
 
