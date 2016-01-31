@@ -471,15 +471,15 @@ static void set_opt(char *w, char *v)
 /* -- main program -- */
 int createAbc(int argc, char **argv)
 {
-    printf("Argc: %d\n", argc);
-    fflush(stdout);
-    int i = 0;
-    while (i < argc)
-    {
-    printf("%d: %s\n", i, argv[i]);
-    fflush(stdout);
-    i++;
-    }
+//    printf("Argc: %d\n", argc);
+//    fflush(stdout);
+//    int i = 0;
+//    while (i < argc)
+//    {
+////    printf("%d: %s\n", i, argv[i]);
+////    fflush(stdout);
+//    i++;
+//    }
 
     unsigned j;
 	char *p, c, *aaa;
