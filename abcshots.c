@@ -4,6 +4,7 @@ extern "C" {
 
 #include "abcshots.h"
 #include <locale.h>
+#include <stdlib.h>
 
 #include "abc2ps.h"
 
