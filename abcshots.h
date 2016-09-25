@@ -6,6 +6,8 @@ extern "C" {
 #endif
 
 int runAbcToSvg(char *abcFile, char *svgFile);
+int runAbcToBigSvg(char *abcFile, char *svgFile);
+
 
 #ifdef __cplusplus
 }
